@@ -1,0 +1,51 @@
+/* Define different colors for Pokémon attributes */
+.pokemon-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+/* Use a custom attribute to define card color */
+.pokemon-card[data-attribute="fire"] {
+  background-color: #FF5733; /* Fire attribute color */
+}
+
+.pokemon-card[data-attribute="water"] {
+  background-color: #3384FF; /* Water attribute color */
+}
+
+.pokemon-card[data-attribute="grass"] {
+  background-color: #33FF6A; /* Grass attribute color */
+}
+
+.pokemon-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.pokemon-card img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.pokemon-card .caught-btn {
+  background-color: #ffdb58;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-weight: bold;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.pokemon-card .caught-btn:disabled {
+  background-color: #caedcc;
+  cursor: not-allowed;
+}
